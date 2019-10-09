@@ -1,0 +1,29 @@
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+
+categorie_index:
+      path: /categorie/
+      controller: App\Controller\CategorieController::index
+      methods: GET
+
+categorie_new:
+      path: /categorie/new
+      controller: App\Controller\CategorieController::new
+      methods: GET|POST
+
+categorie_show:
+      path: /categorie/{id}
+      controller: App\Controller\CategorieController::show
+      methods: GET
+
+categorie_edit:
+      path: /categorie/{id}/edit
+      controller: App\Controller\CategorieController::edit
+      methods: GET|POST
+
+categorie_delete:
+      path: /categorie/{id}
+      controller: App\Controller\CategorieController::delete
+      methods: DELETE
